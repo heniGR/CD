@@ -9,7 +9,7 @@ pipeline{
         	
         	git branch: 'master',
         	url : 'https://github.com/heniGR/EmptyProject.git'
-        	   
+        	   ansible-galaxy init build
         	     }  
                          }
       
