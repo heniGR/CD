@@ -9,6 +9,9 @@ pipeline{
         	
         	git branch: 'master',
         	url : 'https://github.com/heniGR/EmptyProject.git'
+                script{
+                sh "ansible-playbook ansible/build.yml -i ansible/inventory/host.yml "
+                      }
         	   
         	     }  
                          }
