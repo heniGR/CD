@@ -11,7 +11,7 @@ pipeline{
         	url : 'https://github.com/heniGR/EmptyProject.git'
               script{
                     
-                    sh "Ansible-playbook ansible/build.yml -i ansible/inventory/host.yml -e ansible_become_password=root "
+                    sh "ansible-playbook ansible/build.yml -i ansible/inventory/host.yml -e ansible_become_password=root "
                 }
         	   
         	     }  
